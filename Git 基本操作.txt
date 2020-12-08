@@ -1,0 +1,110 @@
+Git 基本操作
+
+1.
+進入路徑
+cd +路徑
+
+2. 
+查詢資料或檔案
+
+dir  查看所有目錄
+<DIR> 為資料夾
+有副檔名 為檔案
+
+dir/w 只看檔名
+[] 為資料夾
+有副檔名 為檔案
+
+3.
+建立資料夾
+mkdir 資料夾名稱
+
+4.
+移除資料夾
+rmdir 資料夾名稱
+
+5.
+新增檔案
+ccho >> 檔案名稱.副檔名
+
+6.
+刪除檔案
+del 檔案名稱.副檔名
+
+7.
+初始化
+git init
+Initialized empty Git repository in C:/Users/40637/OneDrive/桌面/20201208/.git/
+
+8.
+輸入 git config 
+查看 git config 指令
+
+9.
+查看 git config 指令
+
+-l , --list 逗號代表 或者
+-l 縮寫 --list 完整寫法
+
+輸入 git config -l
+
+10.
+進入 git config -l
+
+設定 
+全域 名稱 user.name
+全域 信箱 user.email
+
+git confol --global user.name "Teddy"
+git confol --global user.email "zxc9230cxz@gmail.com"
+
+再輸入一次 git config -l 查看
+
+11.
+查看狀態 git status 
+
+紅色 : 未追蹤
+綠色 : 已追蹤
+
+(1) 單一加入追蹤 git add 檔案名稱.副檔名
+(2) 資料夾中所有檔案加入追蹤 git add .
+
+再去看 git status 紅色 如果變 綠色 完成追蹤
+
+任何修改 都會變成紅色 加上 add 檔案名稱.副檔名 會變成綠色
+
+12.
+上傳儲存庫(完成一個段落後)
+git commit -m " "  m為 message
+" "一定要改文字 一般會給做了什麼事情!
+
+使用流程 
+
+(1)加入追蹤 git add . (2)提交儲存庫 git commit -m "" (3)綠色 git commit -m "" 才有意義 紅色沒有意義
+
+(1) git status 紅色  (2) git add . 變成綠色 (3) git status 綠色 (4) git commit -m ""
+
+13.
+回覆上層 (要再 git add. 跟 git commit -m "") 之前
+git checkout 檔案名稱.副檔名
+
+14.
+建立連線 
+預設是 origin (可更換)
+
+(1)建立連線 git remote add origin 網址 [連線一次就可以了]
+(2)上傳 git push origin master
+
+上傳之前會先連線
+
+1.
+遠端下載到本地端 
+記得要初始化init
+
+路徑 git clone 網址
+
+使用流程 
+
+(1)加入追蹤 git add . (2)提交儲存庫 git commit -m "" (3)綠色 git commit -m "" 才有意義 紅色沒有意義
+
+(1) git status 紅色 (2) git add . 變成綠色 (3) git status 綠色 (4) git commit -m "" (5)上傳 git push origin master
