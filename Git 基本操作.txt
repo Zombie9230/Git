@@ -85,7 +85,7 @@ git commit -m " "  m為 message
 (1) git status 紅色  (2) git add . 變成綠色 (3) git status 綠色 (4) git commit -m ""
 
 13.
-回覆上層 (要再 git add. 跟 git commit -m "") 之前
+回覆上層 (要再 git add . 跟 git commit -m "") 之前
 git checkout 檔案名稱.副檔名
 
 14.
