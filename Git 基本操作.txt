@@ -55,8 +55,8 @@ Initialized empty Git repository in C:/Users/40637/OneDrive/桌面/20201208/.git
 全域 名稱 user.name
 全域 信箱 user.email
 
-git confol --global user.name "Teddy"
-git confol --global user.email "zxc9230cxz@gmail.com"
+git config --global user.name "Teddy"
+git config --global user.email "zxc9230cxz@gmail.com"
 
 再輸入一次 git config -l 查看
 
@@ -108,3 +108,5 @@ git checkout 檔案名稱.副檔名
 (1)加入追蹤 git add . (2)提交儲存庫 git commit -m "" (3)綠色 git commit -m "" 才有意義 紅色沒有意義
 
 (1) git status 紅色 (2) git add . 變成綠色 (3) git status 綠色 (4) git commit -m "" (5)上傳 git push origin master
+
+** 複製 copy 檔案名稱.副檔名 檔案名稱.副檔名 
